@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            display: inline;
+            margin: 20px;
+        }
+        div {
+            text-align: center;
+            background-color: #6868b6;
+            height: 40px;
+            padding-top: 20px;
+        }
+        .under {
+            text-decoration: underline;
+        }
+        .over {
+            text-decoration: wavy overline;
+        }
+        .line {
+            text-decoration: dashed underline;
+        }
+        .thick {
+            text-decoration: solid underline;
+        }
+        .blink {
+            text-decoration: line-through;
+        }
+        p:hover {
+            color: #d13a92;
+            transition-property: all; font-size: 20px; 
+            text-decoration-style: bold;  
+        }
+    </style>
+</head>
+<body>
+    Q. Creat a navigation bar with links aligned to the center.On hovering the navigation links change the text color,increase the font size and make text bold. 
+    <div>
+        <p class="under">Home</p>
+        <p class="over">About US</p>
+        <P class="line">Contect</P>
+        <p class="thick">Blog</p>
+        <p class="blink">Login</p>
+    </div>
+</body>
+</html>

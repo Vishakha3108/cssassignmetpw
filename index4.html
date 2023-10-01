@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position:relative;
+            width: 50%;
+        }
+        .image {
+            display: block;
+            width: 400px;
+            height: 400px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 400px;
+            width: 400px;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #4848aa;
+
+        }
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .container:hover  .image {
+            opacity: 1;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover Below to reval a surprise.</h1>
+    <div class="container">
+        <img class="image" src="image.jpg.jpg" alt="sunset">
+        <div class="overlay">
+            <div class="tet">Tap Above</div>
+        </div>
+    </div>
+</body>
+</html>
